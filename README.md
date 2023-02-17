@@ -1,7 +1,7 @@
 # Bem vindo à DEVinHouse <img width="180px" alt="Philips" src="ExerciciosM02S03/images/logo-phil.png"/>
 ## Módulo 02 - Semana 03
 
-Eu desenvolvi um projeto `Java` para a elaboração dos 10 exercícios referentes a essa semana. <br>
+Eu desenvolvi um projeto `Java` para a elaboração dos 8 exercícios referentes a essa semana. <br>
 
 Para visualizar o meu projeto, <a href="https://github.com/GeorgeEnriqueBravo/DEVinHouse-Modulo02-Semana03/archive/refs/heads/main.zip" target="_blank">
     clique aqui
@@ -16,126 +16,51 @@ Após o download, abra a pasta "ExerciciosM02S03" utilizando o software `Intelli
 ---
 
 # Lista de exercícios <img width="75px" alt="Philips" src="ExerciciosM02S03/images/lista.png"/>
-### [M2S02] Ex 1 - Acesse elementos de um Array
+### [M2S03] Ex 1 - Clínica de Emagrecimento
 
-Implemente um código copiando o array abaixo, e depois imprima no console o valor dos seguintes elementos:
+Vamos criar um sistema para uma clínica de emagrecimento. Vamos começar pela Classe Clínica. Essa Classe deve ter os atributos nome do dono, nome da clínica, CNPJ, endereço (esse deve ser o logradouro) e o código da Clínica.
 
-int[] arr = { 56, 57, 58, 67, 99, 12, 11, 88 };
+### [M2S03] Ex 2 - Cálculo do IMC
 
-a) Imprima o valor do primeiro elemento; <br>
-b) Imprima o valor do último elemento; <br>
-c) Imprima o valor do terceiro elemento; <br>
+Vamos criar um método para calcular o IMC dos pacientes que veem a Clínica. Crie esse método dentro da classe Clínica e esse método deve retornar o número do IMC e também deve exibir no console qual é a categoria do IMC da pessoa com base na tabela em anexo.
 
-### [M2S02] Ex 2 - Acesse elementos de um Array (multidimensional)
+Esse método deve receber os parâmetros: peso e altura
 
-Implemente um código copiando o array abaixo, e depois imprima no console o valor dos seguintes elementos:
+Formula IMC = peso / (altura)².
 
-```
-double[][] notas = {
-    {10, 8.5, 5.5, 9.5},
-    {8.5, 7, 7.5, 6},
-    {8, 9, 10, 7.5},
-    {9, 9.5, 10, 8}
-};
-```
+### [M2S03] Ex 3 - Cliente
+
+Crie uma classe Cliente que contenha os atributos peso, altura e idade.
+
+Adicione um novo atributo na Classe Clinica que receba uma Lista de Clientes, essa Lista deve conter todos os Cliente dessa Clinica.
+
+### [M2S03] Ex 4 - Encapsulamento
+
+Adicione um encapsulamento nas classes criadas anteriormente. Para o atributo Lista de Cliente adicione um método que nos permita adicionar um Cliente por vez a essa lista.
+
+### [M2S03] Ex 5 - Construtores
+
+Adicioner construtores e cada classe anterior.
+Adicione na Classe Cliente um construtor que receba apenas altura e peso e um construtor que receba todos os atributos.
+
+Adicione na Classe Clinica um construtor que recebe apenas o nome do dono e um construtor que rebe o nome do dono e um Lista de Clientes.
+
+### [M2S03] Ex 6 - Tratamento
+
+Crie um método chamado tratamento que receba um Cliente, esse método vai reduzir o peso do Cliente em 5 quilos e após isso irá retornar o novo peso do Cliente.
+
+Esse método deve receber como parâmetros o id do Cliente na lista da clinica, e caso o cliente não exista ele deve exibir uma mensagem dizendo “cliente não identificado“. O peso do Cliente identificado deve ser alterada após a execução do método.
     
-a) Imprima o valor da nota do primeiro elemento do terceiro array de notas. <br>
-b) Imprima o valor da nota do segundo elemento do quarto array de notas. <br>
-c) Imprima o valor da soma das quatro primeiras notas de cada array. <br>
-
-### [M2S02] Ex 3 - Estrutura de Repetição
-
-Percorra array com estrutura de repetição e faça operações com condicionais:
-
-O array abaixo representa lançamentos na conta bancária do Luke.
-Os valores negativos são débitos e os valores positivos são créditos.
-
-Implemente um código copiando o array abaixo, e depois imprima no console o que se pede:
-
-int[] extrato = { 100, -35, -15, -5, 55, -20 };
-
-a) Percorra o array (operador 'for') e imprima cada elemento do array na ordem; <br>
-b) Percorra o array (operador 'for') e imprima os elementos de trás pra frente (do último para o primeiro); <br>
-c) Percorra o array (operador 'for') e calcule o saldo final da conta (valor inicial era zero), <br>
-imprima o resultado no console. (Dica: crie uma variável saldo inicializada com zero e vá atualizando seu valor); <br>
-d) Imprima no console a mensagem 'saldo positivo' ou 'saldo negativo', dependendo do resultado do saldo final calculado.
-
-### [M2S02] Ex 4 - Estrutura de Repetição e Condicionais
-
-Mike tem um nro da sorte: 25. <br>
-Ele conseguiu uma listagem do histórico dos resultados da loteria conforme arrays abaixo. <br>
-Escreva um código para percorrer os elementos de nros sorteados e contabilizar quantas vezes o nro da sorte dele foi sorteado.
-
-- Dica: Usar um for dentro do outro para percorrer os arrays internos.
-
-```
-int sorteados[][] = {
-    { 1, 44,  6,  2, 45, 60},
-    {10, 21, 55, 25, 34, 44},
-    { 8, 18, 28, 29, 55, 59},
-    {60, 25, 11, 34,  6,  9},
-    {55, 43, 25, 12,  7, 11}
-};
-```
-
-### [M2S02] Ex 5 - Estrutura de Repetição e Condicionais
-
-Implemente uma função 'calcular' que receba como parâmetro um array (numérico) e identifique o maior e menor valor do mesmo. Imprima no console estes valores ou "Não é possível calcular" qdo não for possível.
-
-Teste a função com as seguintes entradas:
-
-- {56, 65, 64, -3, 23, 42, -15, 65, 14, 32, 78, 70, 47}
-- {1}
-- {1, -1}
-- null
-- {-2,-2,-2,-2}
-- {20,10, 30}
-
-### [M2S02] Ex 6 - Listas
-
-Dado a lista de números:
-
-List<Integer> lista = Arrays.asList(1,2,3,4);
-
-Percorra a lista e gere uma nova com o triplo do valor de cada elemento:
+### [M2S03] Ex 7 - Sobrecarga do Tratamento
     
-### [M2S02] Ex 7 - Listas
+Crie um método chamado tratamento que receba um Cliente e um valor numérico, esse método vai reduzir o peso do Cliente pelo valor recebido no método e após isso irá retornar o novo peso do Cliente.
+
+Esse método deve receber como parâmetros o id do Cliente na lista da clinica e o valor a ser reduzido do peso, e caso o cliente não exista ele deve exibir uma mensagem dizendo “cliente não identificado“. O peso do Cliente identificado deve ser alterada após a execução do método.
+
+### [M2S03] Ex 8 - Listagem de Clientes
     
-Dado a lista de nomes:
+Crie um método na Classe Clínica que retorne a lista com todos os Cliente dessa clinica. Esse método também deve exibir o nome de todos o clientes dessa Clínica.
 
-List<String> nomes = Arrays.asList("kirk", "spock", "scott", "mccoy", "sulu");
-
-a) Percorra a lista usando o operador 'for' clássico, usando uma variável para iterar pelos índices, e imprima no console os valores de cada nome; <br>
-b) Percorra a lista usando o operador 'for-each' usando a forma simplificada, e imprima no console os valores de cada nome; <br>
-c) Percorra a lista usando o operador 'while', e imprima no console os valores de cada nome;
-
-### [M2S02] Ex 8 - Listas
-    
-Localize na lista abaixo e imprima no console a primeira ocorrência de número maior que 50.
-
-List<Integer> numeros = Arrays.asList(0,2,88,56,33,42,67,3,9,0,2);
-    
-### [M2S02] Ex 9 - Estrutura de Repetição
-    
-Antigamente tinha um programa de televisão onde o apresentador chamava alguém da platéia e fazia o seguinte desafio valendo um prêmio: a pessoa tinha que contar até determinado número, por exemplo de 0 a 30, e a cada múltiplo de um número (por exemplo 3) deveria substituir pela palavra "PIN".
-Apesar de parecer fácil, muita gente se enrolava e nao conseguia chegar no final do jogo.
-
-Lembrando que para saber se é múltiplo de um número basta dividi-lo por este número e certificar que o resto da divisão é zero.
-Exemplo: 16 é múltiplo de 4 porque 16 % 4 == 0;
-
-Então, dada o array com a sequência abaixo (de 0 a 30), use a função 'for' para iterar sobre seus elementos e a cada múltiplo de 3 imprimir a palavra 'PIN', ou o próprio número caso contrário.
-
-int[] sequencia = {0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,
-21,22,23,24,25,26,27,28,29,30};
-    
-### [M2S02] Ex 10 - Estrutura de Repetição
-    
-Um palíndrome (ou palíndromo), segundo o dicionário Houaiss,
-"diz-se de frase ou palavra que se pode ler, indiferentemente, da esquerda para direita ou vice-versa", como por exemplo: osso, ana, radar.
-Ou seja, é uma palavra que quando lida de trás pra frente tem o mesmo significado.
-
-Implemente um código com o que aprendemos até agora que retorne se determinada palavra é um palíndromo.
-    
 ---
 
 # O que é DEVinHouse?
