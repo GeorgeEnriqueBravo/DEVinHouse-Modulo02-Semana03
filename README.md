@@ -1,21 +1,21 @@
-# Bem vindo à DEVinHouse <img width="180px" alt="Philips" src="ExerciciosM02S02/images/logo-phil.png"/>
+# Bem vindo à DEVinHouse <img width="180px" alt="Philips" src="ExerciciosM02S03/images/logo-phil.png"/>
 ## Módulo 02 - Semana 03
 
 Eu desenvolvi um projeto `Java` para a elaboração dos 10 exercícios referentes a essa semana. <br>
 
-Para visualizar o meu projeto, <a href="https://github.com/GeorgeEnriqueBravo/DEVinHouse-Modulo02-Semana02/archive/refs/heads/main.zip" target="_blank">
+Para visualizar o meu projeto, <a href="https://github.com/GeorgeEnriqueBravo/DEVinHouse-Modulo02-Semana03/archive/refs/heads/main.zip" target="_blank">
     clique aqui
 </a>
 para baixa-lo. <br>
 
-Após o download, abra a pasta "ExerciciosM02S02" utilizando o software `IntelliJ`. Para baixar a última versão grátis do IntelliJ 
+Após o download, abra a pasta "ExerciciosM02S03" utilizando o software `IntelliJ`. Para baixar a última versão grátis do IntelliJ 
 <a href="https://www.jetbrains.com/idea/download/download-thanks.html?platform=windows&code=IIC" target="_blank">
     clique aqui
 </a>.
   
 ---
 
-# Lista de exercícios <img width="75px" alt="Philips" src="ExerciciosM02S02/images/lista.png"/>
+# Lista de exercícios <img width="75px" alt="Philips" src="ExerciciosM02S03/images/lista.png"/>
 ### [M2S02] Ex 1 - Acesse elementos de um Array
 
 Implemente um código copiando o array abaixo, e depois imprima no console o valor dos seguintes elementos:
@@ -150,7 +150,7 @@ __Ferramentas__ – GitHub, Trello e Slack
 
 ---
 
-# Tecnologias Utilizadas <img width="35px" alt="🌐" src="ExerciciosM02S02/images/tag.gif"/>
+# Tecnologias Utilizadas <img width="35px" alt="🌐" src="ExerciciosM02S03/images/tag.gif"/>
 Nos exercícios dessa semana foram utilizadas as seguintes tecnologias:
 <div style="display: inline_block">
     <img align="center" alt="Java" src="https://img.shields.io/badge/Java-ED8B00?style=for-the-badge&logo=openjdk&logoColor=white"/>
