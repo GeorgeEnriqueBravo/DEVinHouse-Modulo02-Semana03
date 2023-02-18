@@ -55,20 +55,24 @@ public class Clinica {
         Double peso = 0.0;
         Boolean pacienteNaoExiste = true;
 
-        for (int i = 0; i < this.listaClientes.size(); i++) {
+//        for (int i = 0; i < this.listaClientes.size(); i++) {
+//
+//            if (this.listaClientes.get(i).getId() == idCliente) {
+//                this.listaClientes.get(i).setPeso(this.listaClientes.get(i).getPeso() - 5);
+//                peso = this.listaClientes.get(i).getPeso();
+//
+//                pacienteNaoExiste = false;
+//                break;
+//            }
+//        }
 
-            if (this.listaClientes.get(i).id == idCliente) {
-                this.listaClientes.get(i).peso -= 5;
-                peso = this.listaClientes.get(i).peso;
-
-                pacienteNaoExiste = false;
-                break;
-            }
-        }
-
-        if (pacienteNaoExiste) {
+        if (idCliente > listaClientes.size()) {
             System.out.println("Cliente não identificado");
         }
+
+
+        this.listaClientes.get(idCliente).setPeso(this.listaClientes.get(idCliente).getPeso() - 5);
+
 
         return peso;
     }
@@ -78,20 +82,22 @@ public class Clinica {
         Double peso = 0.0;
         Boolean pacienteNaoExiste = true;
 
-        for (int i = 0; i < this.listaClientes.size(); i++) {
-
-            if (this.listaClientes.get(i).id == cliente.id) {
-                this.listaClientes.get(i).peso -= valor;
-                peso = this.listaClientes.get(i).peso;
-
-                pacienteNaoExiste = false;
-                break;
-            }
-        }
+//        for (int i = 0; i < this.listaClientes.size(); i++) {
+//
+//            if (this.listaClientes.get(i).id == cliente.id) {
+//                this.listaClientes.get(i).peso -= valor;
+//                peso = this.listaClientes.get(i).peso;
+//
+//                pacienteNaoExiste = false;
+//                break;
+//            }
+//        }
 
         if (pacienteNaoExiste) {
             System.out.println("Cliente não identificado");
         }
+
+        cliente.setPeso(cliente.getPeso() - valor);
 
         return peso;
     }
